@@ -118,13 +118,33 @@ a:hover {
 .App-main-feature-img {
   margin: 0;
   padding: 0;
-  width: 6em;
-  height: auto
+
+}
+
+.App-main-figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  float: right;
+  margin: 0.8em 1.4em;
+  transition: all 5s ease-in-out;
+}
+
+.App-main-figure figcaption {
+  margin-top: 1em;
+  padding: 0.3em;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .App-main-body-img {
-  margin: 0.8em 1.4em;
-  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.6em;
+  box-shadow: 1em 1em 5em rgba(0, 0, 0, 0.8);
+}
+
+.App-main-figure:hover {
+  transform: scale(1.05);
 }
 
 /* ======== Footer ======== */
