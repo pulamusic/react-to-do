@@ -2,6 +2,12 @@
   "name": "react-to-do",
   "version": "0.1.0",
   "private": true,
+  "author": "Jim Carroll",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulamusic/react-to-do.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
