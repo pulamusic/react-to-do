@@ -4,7 +4,7 @@ import bodyImg from '../assets/sunRa.jpg'
 class Main extends Component {
   render() {
     return (
-      <main className="App-main" id="main">
+      <main className="App-main content" id="main">
         <h1><span className="section-marker">&sect;</span> some dummy text</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat posuere nisi, ac fermentum nisl tempus eu. Nullam consectetur felis a leo vestibulum ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum diam, eu laoreet lorem. Quisque tempus mauris quis rutrum mattis. In eleifend varius nisi, at laoreet ligula tincidunt id. Quisque feugiat odio laoreet dui vestibulum, in faucibus urna lacinia. Integer ac augue ante.</p>
 
