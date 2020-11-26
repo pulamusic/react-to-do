@@ -4,11 +4,14 @@ import bodyImg from '../assets/sunRa.jpg'
 class Main extends Component {
   render() {
     return (
-      <main className="App-main" id="main">
+      <main className="App-main content" id="main">
         <h1><span className="section-marker">&sect;</span> some dummy text</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat posuere nisi, ac fermentum nisl tempus eu. Nullam consectetur felis a leo vestibulum ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum diam, eu laoreet lorem. Quisque tempus mauris quis rutrum mattis. In eleifend varius nisi, at laoreet ligula tincidunt id. Quisque feugiat odio laoreet dui vestibulum, in faucibus urna lacinia. Integer ac augue ante.</p>
 
-        <img src={bodyImg} alt="Sun Ra" className="App-main-body-img" />
+        <figure className="App-main-figure">
+          <img src={bodyImg} alt="Sun Ra" className="App-main-body-img" />
+        <figcaption>The inimitable Sun Ra</figcaption>
+        </figure>
 
         <p>Aliquam aliquet mauris ac nulla molestie, in dictum turpis commodo. Donec ornare urna nisi, eu sagittis ligula ultrices ut. Ut in libero ac turpis consectetur auctor sit amet vel mi. Quisque ultrices blandit sem auctor blandit. Integer aliquet nisi at semper tincidunt. Vestibulum neque felis, dictum congue ante a, suscipit imperdiet arcu. Quisque euismod, nulla efficitur tincidunt faucibus, eros lorem pellentesque metus, ac porttitor ligula justo non dolor. Aenean sapien felis, ultrices quis velit a, fringilla vulputate magna. Pellentesque imperdiet libero at semper posuere. Vestibulum volutpat leo vel nunc sagittis dapibus. Curabitur arcu augue, consectetur eget rhoncus in, iaculis non tellus. Praesent sagittis magna turpis, vel pellentesque orci eleifend eu.</p>
 
