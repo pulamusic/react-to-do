@@ -2,9 +2,11 @@ import { Component } from 'react'
 import bodyImg from '../assets/sunRa.jpg'
 
 class Visible extends Component {
+
   hideDiv = () => {
-    /* When */
+    /* When opacity = 0, remove `.App-main-visible` and add `.App-main-hidden` */
   }
+  
   render() {
     return (
       <figure className="App-main-figure">
