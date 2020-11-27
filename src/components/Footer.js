@@ -1,8 +1,11 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
-//import Year from '../js/copyYear'
+import Year from './Year'
 
 class Footer extends Component {
+
+
+
   render() {
     return (
       <footer className="App-footer">
@@ -11,7 +14,7 @@ class Footer extends Component {
           <li><a href="#main">main content</a></li>
         </ul>
 
-        <p>&copy; <span id="yearTag">2020</span> Jim Carroll | <a href="https://github.com/pulamusic" target="_blank" rel="noreferrer">pulamusic</a></p>
+        <p>&copy; <span id="yearTag"><Year /></span> Jim Carroll | <a href="https://github.com/pulamusic" target="_blank" rel="noreferrer">pulamusic</a></p>
 
 
       </footer>
