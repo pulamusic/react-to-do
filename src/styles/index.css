@@ -77,13 +77,14 @@ figcaption {
 
 .mark-span {
   display: inline-block;
+  font-weight: 300;
 }
 
 .section-divider-div {
   display: block;
   color: rgba(245, 177, 57, 0.4);
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   transition: all 0.5s ease-in-out;
 }
 
@@ -95,6 +96,7 @@ figcaption {
   transform: scale(1.1);
   color: rgba(245, 177, 57, 1);
   font-weight: 600;
+  margin: 1.5em 30%;
   box-shadow: 1em 1em 10em rgba(0, 0, 0, 0.3);
   padding: 0 5em;
   border-radius: 1em;
@@ -167,7 +169,7 @@ figcaption {
 
 .App-nav a:hover {
   transform: scale(1.1);
-  letter-spacing: 1.05em;
+  letter-spacing: 1.025em;
   font-weight: 400;
 }
 
@@ -213,12 +215,16 @@ figcaption {
 
 .App-todo-container {
   margin: 0;
-  padding: 0.5em 0;
+  padding: 1em 4em;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.App-todo-container h3 {
+.App-todo-container h1 {
   font-weight: 300;
+}
+
+.App-todo-header {
+  padding: 1em 4em;
 }
 
 .App-todo-list {
@@ -226,12 +232,28 @@ figcaption {
   flex-direction: column;
   margin: 0;
   padding: 1em 4em;
-
 }
 
 .App-todo-items {
   margin: 0.6em 0;
   padding: 0.5em 1.3em;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.App-todo-item-shadow {
+  margin: 0 50% 0 2em;
+  border-radius: 0 0.6em 0.6em 0;
+  box-shadow: inset 0.5em 1em 10em 10em rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1em);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1em);
+  border-right: 1px solid rgba(0, 0, 0, 0.1em);
+  transition: all 0.3s ease-in-out;
+}
+
+.App-todo-item-shadow:hover {
+  transform: scale(1.025);
+  margin: 0 60% 0 2.34em;
 }
 
 .App-todo-item-arrow {
@@ -338,6 +360,17 @@ figcaption {
   justify-content: center;
 }
 
+.App-footer a {
+  font-weight: 300;
+  transition: all 0.6s ease-in-out;
+}
+
+.App-footer a:hover {
+  transform: scale(1.1);
+  letter-spacing: 1.025em;
+  font-weight: 400;
+}
+
 .App-footer p {
   padding: 0.8em;
   margin: 0 0 2em 0;;
@@ -347,13 +380,14 @@ figcaption {
   margin: 1.6em 0;
   padding: 0;
   background-color: rgba(40, 44, 52, 0.6);
-  transition: all 3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 0.4em;
 }
 
 .App-footer ul:hover {
   transform: scale(1.05);
   background-color: rgba(40, 44, 52, 1);
+
 }
 
 .App-footer li {

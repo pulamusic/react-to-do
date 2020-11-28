@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom'
 // import TodoItem from './TodoItem'
 import PropTypes from 'prop-types'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-library.add(fab, faBars, faCoffee)
+// library.add(fab, faBars, faCoffee)
 
-const coffee = <FontAwesomeIcon icon={faCoffee} />
+// const coffee = <FontAwesomeIcon icon={faCoffee} />
 
-ReactDOM.render(coffee, document.body)
+// ReactDOM.render(coffee, document.body)
 
 class Todos extends Component {
 
@@ -40,9 +40,25 @@ class Todos extends Component {
     return (
       <div>
         { this.state.todos.title }
-        <h3 className="App-todo-items container-border-left"><span className="App-todo-item-arrow">{ coffee }</span> something</h3>
-      <h3 className="App-todo-items container-border-left"><span className="App-todo-item-arrow">{ coffee }</span> <FontAwesomeIcon icon={coffee} /> something else</h3>
-        <h3 className="App-todo-items container-border-left"><span className="App-todo-item-arrow">{ coffee }</span> something yet again</h3>
+
+        <div className="App-todo-item-shadow">
+          <a href="/">
+            <h3 className="container-border-left App-todo-items">&ni; something</h3>
+          </a>
+        </div>
+
+        <div className="App-todo-item-shadow">
+          <a href="/">
+            <h3 className="container-border-left App-todo-items">&ni; something else</h3>
+          </a>
+        </div>
+
+        <div className="App-todo-item-shadow">
+          <a href="/">
+            <h3 className="container-border-left App-todo-items">&ni; something yet again</h3>
+          </a>
+        </div>
+
       </div>
     )
   }
