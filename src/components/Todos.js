@@ -1,18 +1,5 @@
 import React, { Component } from 'react'
-// import ReactDOM from 'react-dom'
-// import TodoItem from './TodoItem'
 import PropTypes from 'prop-types'
-
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-// import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-// library.add(fab, faBars, faCoffee)
-
-// const coffee = <FontAwesomeIcon icon={faCoffee} />
-
-// ReactDOM.render(coffee, document.body)
 
 class Todos extends Component {
   constructor(props) {
@@ -39,28 +26,21 @@ class Todos extends Component {
   }
 
   render() {
-
-    const title = this.state.todos.title
-
+    const todo = this.state.todos.id
     return (
-      <div>
-        { title }
+      <div className="App-todo-container container-border-left">
+
         <div class="clearfix"></div>
+
+        <div className="App-todo-item-shadow">
+          <a href="/">
+            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> { todo }</h3>
+          </a>
+        </div>
+
         <div className="App-todo-item-shadow">
           <a href="/">
             <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something</h3>
-          </a>
-        </div>
-
-        <div className="App-todo-item-shadow">
-          <a href="/">
-            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something else</h3>
-          </a>
-        </div>
-
-        <div className="App-todo-item-shadow">
-          <a href="/">
-            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something yet again</h3>
           </a>
         </div>
 
@@ -74,6 +54,8 @@ Todos.propTypes = {
 }
 
 export default Todos
+
+/* ======== things I don't yet want to delete ======== */
 
 /*
 constructor (props) {
@@ -92,4 +74,44 @@ return this.state.todos.map((todo) => (
     </div>
   </div>
 ))
+*/
+
+/*
+<div className="App-todo-container container-border-left">
+  <div class="clearfix"></div>
+  <div className="App-todo-item-shadow">
+    <a href="/">
+      <Todos />
+    </a>
+
+    <a href="/">
+      <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something</h3>
+    </a>
+  </div>
+</div>
+
+
+
+<div className="App-todo-container container-border-left">
+  <div class="clearfix"></div>
+  <div className="App-todo-item-shadow">
+    <a href="/">
+      <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something</h3>
+    </a>
+  </div>
+
+  <div className="App-todo-item-shadow">
+    <a href="/">
+      <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something else</h3>
+    </a>
+  </div>
+
+  <div className="App-todo-item-shadow">
+    <a href="/">
+      <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something yet again</h3>
+    </a>
+  </div>
+</div>
+
+
 */

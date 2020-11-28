@@ -1,5 +1,4 @@
 import { Component } from 'react'
-// import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 import SectionDiv from './SectionDiv'
 import SectionMark from './SectionMark'
@@ -7,11 +6,11 @@ import Todos from './Todos'
 
 class TodoSect extends Component {
   render() {
+    /*const title = this.state.todos.title*/
     return (
-      <div className="App-todo-list container-outline">
-
+      <div className="outer-container container-outline">
         <div className="App-todo-header">
-          <h1><SectionMark /> todo list</h1>
+          <h1><SectionMark /> Todo</h1>
         </div>
 
         <div className="App-todo-list-container">
@@ -19,9 +18,9 @@ class TodoSect extends Component {
         </div>
 
         <div className="App-todo-footer">
-          <SectionDiv />
+          <SectionDiv url={'#main'} />
         </div>
-        
+
       </div>
     )
   }
