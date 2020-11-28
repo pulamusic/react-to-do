@@ -39,13 +39,13 @@ class Todos extends Component {
   }
 
   render() {
-    
+
     const title = this.state.todos.title
 
     return (
       <div>
         { title }
-
+        <div class="clearfix"></div>
         <div className="App-todo-item-shadow">
           <a href="/">
             <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something</h3>
