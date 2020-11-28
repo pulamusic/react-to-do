@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import logo from '../assets/adinkra-sm.png'
+// import FontAwesomeIcon from '../App'
 
 class Nav extends Component {
 
   expandNav = () => {
-    const x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+    const x = document.getElementById("myLinks")
+    let displayStyle = x.style.display
+    return displayStyle === "block" ? displayStyle = "none" : displayStyle = "block"
   }
 
   render() {
@@ -21,13 +19,18 @@ class Nav extends Component {
         <ul id="navList">
           <li><a href="/">home</a></li>
           <li><a href="#main">main content</a></li>
+          <li><a href="https://pulamusic-space-app.netlify.app/" target="_blank" rel="noreferrer">space</a></li>
         </ul>
-        <a href="javascript:void(0);" className="icon" onclick="expandNav()">
-          <i class="fa fa-bars"></i>
-        </a>
+
       </nav>
     )
   }
 }
 
 export default Nav
+
+/*
+<a href="#navbar" className="icon" onClick="expandNav()">
+  <h4>icon</h4>
+</a>
+*/

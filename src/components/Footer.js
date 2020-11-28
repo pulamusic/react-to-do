@@ -3,12 +3,9 @@ import { Component } from 'react'
 import Year from './Year'
 
 class Footer extends Component {
-
-
-
   render() {
     return (
-      <footer className="App-footer">
+      <footer id="footer" className="App-footer">
         <ul className="footer-nav">
           <li><a href="/">home</a></li>
           <li><a href="#main">main content</a></li>

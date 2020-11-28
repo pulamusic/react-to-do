@@ -1,40 +1,34 @@
 
 import React, { Component } from 'react'
+
+import Todos from './components/Todos'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Main from './components/Main'
 import Nav from './components/Nav'
-import Todos from './components/Todos'
+// import TodoSect from './components/TodoSect'
+import SectionMark from './components/SectionMark'
+import SectionDiv from './components/SectionDiv'
 
 class App extends Component {
 
-  state = {
-    todos: [
-      {
-        id: 1,
-        title: 'take out the trash',
-        completed: false
-      },
-      {
-        id: 2,
-        title: 'buy an eraser',
-        completed: false
-      },
-      {
-        id: 3,
-        title: 'don\'t be an idiot',
-        completed: false
-      }
-    ]
-  }
-
   render() {
-    console.log(this.state.todos)
+
     return (
-      <div className="container">
+      <div className="outer-container">
         <Nav />
         <Header />
-        <Todos />
+        <div className="outer-container content container-outline">
+          <div className="App-todo-header">
+            <h1><SectionMark /> Todo</h1>
+          </div>
+          <div className="App-todo-list App-todo-container container-border-left">
+            <Todos />
+          </div>
+          <div className="App-todo-footer">
+            <SectionDiv />
+          </div>
+        </div>
         <Main />
         <Footer />
       </div>
