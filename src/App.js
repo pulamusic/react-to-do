@@ -18,7 +18,7 @@ class App extends Component {
       <div className="outer-container">
         <Nav />
         <Header />
-        <div className="outer-container content container-outline">
+        <div className="outer-container container-outline">
           <div className="App-todo-header">
             <h1><SectionMark /> Todo</h1>
           </div>
@@ -26,7 +26,7 @@ class App extends Component {
             <Todos />
           </div>
           <div className="App-todo-footer">
-            <SectionDiv />
+            <SectionDiv url={'#main'} />
           </div>
         </div>
         <Main />

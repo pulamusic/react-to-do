@@ -2,10 +2,19 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export class TodoItem extends Component {
+  getStyle = () => {
+    if (this.props.todo.completed) {
+      return {
+        textDecoration: 'line-through'
+      }
+    } else {
+
+    }
+  }
 
   render() {
     return (
-      <div>
+      <div style={this.getStyle()}>
         <h3>{ this.props.todo.title }</h3>
       </div>
     )

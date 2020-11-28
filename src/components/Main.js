@@ -29,7 +29,7 @@ class Main extends Component {
 
         <p>Donec eros velit, mattis quis felis non, luctus hendrerit ante. Fusce blandit pellentesque erat, ut congue ligula rhoncus sed. Aliquam posuere nec odio vel vulputate. In id neque id lorem venenatis congue sit amet eu ipsum. Sed pharetra viverra vehicula. Donec efficitur aliquet tortor, nec efficitur sem. Donec eleifend accumsan ex ac molestie. Curabitur auctor varius venenatis. Donec interdum odio at arcu vehicula scelerisque.</p>
 
-        <SectionDiv />
+        <SectionDiv url={'#footer'} />
       </main>
     )
   }

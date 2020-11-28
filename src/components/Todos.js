@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 // import TodoItem from './TodoItem'
 import PropTypes from 'prop-types'
 
@@ -15,47 +15,52 @@ import PropTypes from 'prop-types'
 // ReactDOM.render(coffee, document.body)
 
 class Todos extends Component {
-
-  state = {
-    todos: [
-      {
-        id: 1,
-        title: 'take out the trash',
-        completed: false
-      },
-      {
-        id: 2,
-        title: 'buy an eraser',
-        completed: false
-      },
-      {
-        id: 3,
-        title: 'don\'t be an idiot',
-        completed: false
-      }
-    ]
+  constructor(props) {
+    super(props)
+    this.state = {
+      todos: [
+        {
+          id: 1,
+          title: 'take out the trash',
+          completed: false
+        },
+        {
+          id: 2,
+          title: 'buy an eraser',
+          completed: false
+        },
+        {
+          id: 3,
+          title: 'don\'t be an idiot',
+          completed: false
+        }
+      ]
+    }
   }
 
   render() {
+    
+    const title = this.state.todos.title
+
     return (
       <div>
-        { this.state.todos.title }
+        { title }
 
         <div className="App-todo-item-shadow">
           <a href="/">
-            <h3 className="container-border-left App-todo-items">&ni; something</h3>
+            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something</h3>
           </a>
         </div>
 
         <div className="App-todo-item-shadow">
           <a href="/">
-            <h3 className="container-border-left App-todo-items">&ni; something else</h3>
+            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something else</h3>
           </a>
         </div>
 
         <div className="App-todo-item-shadow">
           <a href="/">
-            <h3 className="container-border-left App-todo-items">&ni; something yet again</h3>
+            <h3 className="container-border-left App-todo-items"><span className="App-todo-symbol">&ni;</span> something yet again</h3>
           </a>
         </div>
 
